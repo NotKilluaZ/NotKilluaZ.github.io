@@ -1,185 +1,508 @@
-/* General Reset and Body Styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html {
+  height: 100%;
+  width: 100%;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    color: #fff;
-    background-color: #121212;
-    line-height: 1.6;
+#body {
+  margin: 0px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.alphacoders.com/991/991927.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 200%;
+  width: 100%;
 }
 
-/* Navbar Styling */
-.navBar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: transparent;
-    padding: 20px 50px;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+.navBarDark {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  background-color: transparent;
+  padding-right: 50px;
+  padding-bottom: 0px;
 }
 
-.logo {
-    font-size: 2.5rem;
-    color: #fff;
-    text-transform: uppercase;
+.navBarDark h1 {
+  float: left;
+  font-size: 25px;
+  text-align: center;
+  padding-left: 25px;
+  color: white;
+  margin-bottom: 10px;
 }
 
-.navLinks {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+.navBarDark a {
+  float: right;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  padding: 15px 20px;
+  text-decoration: none;
 }
 
-.navLinks li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-    position: relative;
-    padding: 10px;
+#homeTitle {
+  text-align: center;
+  margin-bottom: 1000px;
+  margin-top: 100px;
+  font-family: 'Poppins', sans-serif;
+  position: sticky;
+  top: 75px;
 }
 
-.navEffect {
-    transition: all 0.3s ease;
+#homeTitle h1 {
+  font-size: 100px;
+  margin-bottom: 0;
+  color: white;
 }
 
-.navEffect::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 3px;
-    background-color: #8d54ff;
-    bottom: -5px;
-    left: 0;
-    transition: width 0.3s ease;
+#homeTitle h5 {
+  font-size: 25px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
 }
 
-.navEffect:hover::after {
-    width: 100%;
+#homeTitle h6 {
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: white;
 }
 
-.navEffect:hover {
-    color: #8d54ff;
+.navList {
+  text-align: center;
+  background-color: white;
+  margin: 0;
+  padding: 0;
 }
 
-/* Intro Section */
-.intro {
-    text-align: center;
-    padding: 100px 20px;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.alphacoders.com/991/991927.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
+.navList li {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  margin: 50px 0px;
+  display: table-cell;
+  font-weight: 500;
+  border: 3px solid #8d54ff;
+  width: 20%;
+  padding-bottom: 50px;
+  position: relative;
 }
 
-.intro h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+.navList a {
+  color: white;
+  background-color: #8d54ff;
+  text-align: center;
+  font-size: 20px;
+  padding: 15px 20px;
+  text-decoration: none;
+  border: 2px solid #8d54ff;
+  border-radius: 8px;
+  bottom: 50px;
+  left: 25%;
+  right: 25%;
+  position: absolute;
 }
 
-.intro p {
-    font-size: 1.5rem;
-    margin-bottom: 40px;
+.navList a:hover {
+  color: #8d54ff;
+  background-color: white;
 }
 
-.cta .btn {
-    background-color: #8d54ff;
-    color: #fff;
-    padding: 15px 30px;
-    border: none;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: all 0.3s ease;
+.navList h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  margin: 20px 0px;
 }
 
-.cta .btn:hover {
-    background-color: #fff;
-    color: #8d54ff;
+.navList p {
+  font-size: 20px;
+  margin: 20px 50px 400px 50px;
 }
 
-/* Projects Section */
-.projects {
-    padding: 50px 20px;
-    background-color: #1a1a1a;
+#projectsHover:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://thumbs.dreamstime.com/b/computer-code-programming-coding-process-d-illustration-170640165.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
 }
 
-.sectionTitle {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 40px;
+#aspirationsHover:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://media.istockphoto.com/id/1252548900/vector/businessman-holding-a-flag-looking-at-the-flag-farther-from-the-top-of-the-arrow.jpg?s=612x612&w=0&k=20&c=OPREH08X2K_8lAJU9Vciy5Y0Gx5MtUDtB8ygN3kkA9Y=');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
 }
 
-.projectsGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
+#hobbiesHover:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn-res.keymedia.com/cms/images/ca/155/0319_637171637373959129.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
 }
 
-.projectCard {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+#contactHover:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://media.istockphoto.com/id/1170264057/photo/contact-us-concept-with-wood-block-and-symbols.jpg?s=612x612&w=0&k=20&c=dOAQngtWUKDNZTQz98IaPR4-fax102aaf2T5P1Zk_KA=');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
 }
 
-.projectCard:hover {
-    transform: translateY(-10px);
+#projectsHover {
+  border-right:none;
 }
 
-.projectCard a {
-    display: block;
-    color: inherit;
-    text-decoration: none;
+#aspirationsHover {
+  border-right:none;
 }
 
-.projectImage {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: opacity 0.3s ease;
+#hobbiesHover {
+  border-right:none;
 }
 
-.projectCard:hover .projectImage {
-    opacity: 0.7;
+#navContainer {
+  padding: 100px 80px;
+  background-color: transparent;
+  position: sticky;
+  top: 200px;
 }
 
-.projectInfo {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    text-align: center;
-    color: #fff;
-    transition: transform 0.3s ease;
-    transform: translateY(100%);
+#body1 {
+  background: url('https://wallpaperaccess.com/full/260164.jpg');
 }
 
-.projectCard:hover .projectInfo {
-    transform: translateY(0);
+.title {
+  text-align: center;
+  margin-top: 75px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 65px;
+  font-weight: 600;
 }
 
-.projectInfo h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+.projectsTable, .projectsTableData {
+  border: 3px solid #8d54ff;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
-.projectInfo p {
-    font-size: 1rem;
+.projectsTable {
+  table-layout: fixed;
+  width: 80%;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 30px 20px;
-    background-color: #121212;
-    font-size: 1rem;
+.projectButton {
+  color: white;
+  font-size: 50px;
+  padding: 200px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+#empty {
+  font-size: 30px;
+  font-weight: 100;
+  background: linear-gradient(lightgrey, black);
+  color: black;
+}
+
+#empty:hover {
+  background: linear-gradient(white, #1c1c1c);
+  color: white;
+}
+
+#worldCupSim {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.indianexpress.com/2022/12/FIFA-World-Cup-2022-finals.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#worldCupSim:hover {
+  background: url('https://images.indianexpress.com/2022/12/FIFA-World-Cup-2022-finals.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#dragonGame {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://preview.redd.it/cceb82p5arz61.jpg?auto=webp&s=0398b8f36053d2022c96362633580cfc5994bd52');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#dragonGame:hover {
+  background: url('https://preview.redd.it/cceb82p5arz61.jpg?auto=webp&s=0398b8f36053d2022c96362633580cfc5994bd52');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#red7 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://meeplelikeus.b-cdn.net/wp-content/uploads/2017/09/20170905_113531.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#red7:hover {
+  background: url('https://meeplelikeus.b-cdn.net/wp-content/uploads/2017/09/20170905_113531.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navBarLight {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  background-color: transparent;
+  padding-right: 50px;
+}
+
+.navBarLight h1 {
+  float: left;
+  font-size: 25px;
+  text-align: center;
+  padding-left: 25px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.navBarLight a {
+  float: right;
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+.navBarLight a:hover {
+  color: #8d54ff;
+}
+
+.emailContainer {
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.emailContainer h4 {
+  font-size: 30px;
+  padding-bottom: 0;
+  margin-bottom: 15px;
+}
+
+.email {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  display: inline-block;
+}
+
+.email:after {
+  content: '';
+  position: absolute;
+  background-color: #8d54ff;
+  width: calc(100% + 16px);
+  top: -8px;
+  bottom: -8px;
+  left: -8px;
+  z-index: -1;
+  
+  transform: scaleX(0.02);
+  transform-origin: left;
+  transition: transform 250ms ease-in;
+}
+
+.emailContainer:hover .email:after {
+  transform: scaleX(1);
+}
+
+#body4 {
+  text-align: center;
+  background: url('https://wallpaperaccess.com/full/260164.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#contactInfoTitle {
+  margin-bottom: 0;
+}
+
+#hint {
+  margin-top: 5px;
+}
+
+#animePng {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.navEffectDark {
+  background-image: linear-gradient(
+    to right,
+    #8d54ff,
+    #8d54ff 50%,
+    white 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.navEffectDark:before{
+  content: '';
+  background: #8d54ff;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navEffectDark:hover {
+ background-position: 0;
+}
+
+.navEffectDark:hover::before{
+  width: 100%;
+}
+
+.navEffectLight {
+  background-image: linear-gradient(
+    to right,
+    #8d54ff,
+    #8d54ff 50%,
+    black 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.navEffectLight:before{
+  content: '';
+  background: #8d54ff;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navEffectLight:hover {
+ background-position: 0;
+}
+
+.navEffectLight:hover::before{
+  width: 100%;
+}
+
+.navBarDark, .navBarLight {
+  font-family: 'Poppins', sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  height: 75px;
+}
+
+.aspirationsList {
+  margin-top: 75px;
+}
+
+.aspirationsItem {
+  width: 49%;
+  display: inline-block;
+  margin-top: 50px;
+  padding: 0px 50px;
+}
+
+.aspirationsImage {
+  width: 50%;
+  display: inline-block;
+  margin-top: 100px;
+}
+
+#aspirationsTable {
+  width: 50%;
+  margin: 0;
+  display: inline-flex;
+  margin-bottom: 75px;
+  margin-top: 100px;
+}
+
+#aspirationsTable td {
+  width: 15%;
+  margin: 0;
+}
+
+.universityPng {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 50%;
+}
+
+.subTitle {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: underline;
+  text-decoration-style: double;
+  text-decoration-thickness: 1.5px;
+  font-size: 40px;
+}
+
+.aspirationsItem p {
+  font-size: 25px;
+  line-height: 50px;
+  text-indent: 60px;
+}
+
+#body2 {
+  padding-bottom: 50px;
+}
+
+#rowAlign {
+  vertical-align: middle;
+  display: flex;
+}
+
+#body2, #body3 {
+  background: url('https://wallpaperaccess.com/full/260164.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+iframe {
+  width: 1024px;
+  height: 576px;
+  margin-top: 100px;
 }
