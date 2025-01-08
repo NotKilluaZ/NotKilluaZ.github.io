@@ -1,39 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Personal Website - Charlie Parker</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Charlie Parker | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 
-<body id='body'>
-  <div class='navBarDark'>
-    <h1>Charlie Parker</h1>
-    <a class='navEffectDark' href="contact.html">Contact</a>
-    <a class='navEffectDark' href="hobbies.html">Hobbies</a>
-    <a class='navEffectDark' href="aspirations.html">Aspirations</a>
-    <a class='navEffectDark' href="projects.html">Projects</a>
-    <a class='navEffectDark' href="index.html">Home</a>
-  </div>
-  <div id='homeTitle'>
-    <h1>Personal Profile</h1>
-    <h5>Thank you for spending the time to check out my profile!</h5>
-    <h6>(Scroll)</h6>
-  </div>
-  <div id='navContainer'>
-    <ul class='navList'>
-      <li class='navList' id='projectsHover'><h2>Projects</h2><p>I have currently completed Computer Science 10 and 20 courses in my education. Languages I am familiar with include Python, JavaScript, HTML, and CSS. Explore this page if you're interested in viewing some of my past Computer Science Projects!</p><a href="projects.html">Projects</a></li>
-      <li class='navList' id='aspirationsHover'><h2>Aspirations</h2><p>There are many goals I plan to achieve in the near future. Most of which are academic, or passion based. To know more about my future aspirations tour this page!</p><a href="aspirations.html">Aspirations</a></li>
-      <li class='navList' id='hobbiesHover'><h2>Hobbies</h2><p>Activities I enjoy to occupy my spare time will be listed below. I mainly do sports and video games, although I also do some other things on the side. Click on this page to explore my hobbies!</p><a href="hobbies.html">Hobbies</a></li>
-      <li class='navList' id='contactHover'><h2>Contact</h2><p>If you would like to contact me, this page will contain all of my contact information!</p><a href="contact.html">Contact</a></li>
-    </ul>
-  </div>
+<body id="body1">
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navBar">
+            <h1 class="logo">Charlie Parker</h1>
+            <ul class="navLinks">
+                <li><a href="index.html" class="navEffect">Home</a></li>
+                <li><a href="projects.html" class="navEffect">Projects</a></li>
+                <li><a href="hobbies.html" class="navEffect">Hobbies</a></li>
+                <li><a href="aspirations.html" class="navEffect">Aspirations</a></li>
+                <li><a href="contact.html" class="navEffect">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <!-- Main Content Section -->
+    <section class="intro">
+        <h2>Welcome to My Portfolio!</h2>
+        <p>I am Charlie Parker, a passionate developer who loves creating innovative and interactive experiences.</p>
+        <div class="cta">
+            <a href="projects.html" class="btn">View My Projects</a>
+        </div>
+    </section>
 
-  
-  <script src="script.js"></script>
+    <!-- Footer -->
+    <footer>
+        <p>Made with ❤️ by Charlie Parker</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
