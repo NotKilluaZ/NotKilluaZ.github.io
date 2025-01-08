@@ -1,184 +1,185 @@
-/* General Styling */
+/* General Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  font-family: 'Poppins', sans-serif;
-  color: #333;
-  margin: 0;
-  background-color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: #121212;
+    line-height: 1.6;
 }
 
-h1, h2 {
-  color: #8d54ff;
-  text-align: center;
+/* Navbar Styling */
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 20px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
-a {
-  color: #8d54ff;
-  text-decoration: none;
-  transition: color 0.3s;
+.logo {
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
 }
 
-a:hover {
-  color: #6e3f8f;
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-/* Main Header */
-header {
-  background-color: #8d54ff;
-  padding: 20px 0;
-  text-align: center;
+.navLinks li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    position: relative;
+    padding: 10px;
 }
 
-header nav ul {
-  list-style: none;
-  padding: 0;
+.navEffect {
+    transition: all 0.3s ease;
 }
 
-header nav ul li {
-  display: inline;
-  margin: 0 20px;
+.navEffect::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #8d54ff;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
 }
 
-header nav ul li a {
-  color: white;
-  font-size: 20px;
-  text-transform: uppercase;
-  font-weight: 600;
+.navEffect:hover::after {
+    width: 100%;
 }
 
-header nav ul li a:hover {
-  color: #6e3f8f;
+.navEffect:hover {
+    color: #8d54ff;
 }
 
-/* Contact Page */
-#body4 {
-  background: linear-gradient(to right, #ff7e5f, #feb47b);
-  padding: 50px;
-  text-align: center;
+/* Intro Section */
+.intro {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.alphacoders.com/991/991927.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
 }
 
-.contactContainer {
-  width: 80%;
-  margin: 0 auto;
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 50px;
+.intro h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 
-.contactContainer h2 {
-  font-size: 40px;
-  color: #333;
-  margin-bottom: 20px;
+.intro p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
 }
 
-.contactForm {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  max-width: 600px;
-  margin: 0 auto;
+.cta .btn {
+    background-color: #8d54ff;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
-.contactForm input, .contactForm textarea {
-  padding: 15px;
-  font-size: 16px;
-  border: 2px solid #8d54ff;
-  border-radius: 8px;
-  margin-top: 10px;
-  width: 100%;
+.cta .btn:hover {
+    background-color: #fff;
+    color: #8d54ff;
 }
 
-.contactForm textarea {
-  height: 200px;
+/* Projects Section */
+.projects {
+    padding: 50px 20px;
+    background-color: #1a1a1a;
 }
 
-.contactForm button {
-  padding: 15px 30px;
-  background-color: #8d54ff;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+.sectionTitle {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
 }
 
-.contactForm button:hover {
-  background-color: #6e3f8f;
+.projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
 }
 
-/* Projects Page */
-#body1 {
-  background: url('https://wallpaperaccess.com/full/260164.jpg');
-  background-size: cover;
-  background-position: center;
-  padding: 50px;
+.projectCard {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
 
-.projectsTable {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
+.projectCard:hover {
+    transform: translateY(-10px);
 }
 
-.projectsTableData {
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 250px;
-  text-align: center;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+.projectCard a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
 }
 
-.projectsTableData a {
-  text-decoration: none;
-  color: #333;
-  font-size: 20px;
-  font-weight: bold;
-  display: block;
-  padding: 20px;
-  border-radius: 8px;
-  background-color: #8d54ff;
-  transition: background-color 0.3s ease-in-out;
+.projectImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
 }
 
-.projectsTableData:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.projectCard:hover .projectImage {
+    opacity: 0.7;
 }
 
-.projectsTableData:hover a {
-  background-color: #6e3f8f;
+.projectInfo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    transition: transform 0.3s ease;
+    transform: translateY(100%);
 }
 
-#empty {
-  font-size: 30px;
-  font-weight: 100;
-  background-color: lightgray;
-  color: black;
-  text-align: center;
-  padding: 50px;
-  border-radius: 10px;
+.projectCard:hover .projectInfo {
+    transform: translateY(0);
 }
 
-#empty:hover {
-  background-color: #1c1c1c;
-  color: white;
+.projectInfo h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
-/* Global Styles for Buttons and Interactive Elements */
-button, .projectButton {
-  background-color: #8d54ff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s;
+.projectInfo p {
+    font-size: 1rem;
 }
 
-button:hover, .projectButton:hover {
-  background-color: #6e3f8f;
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #121212;
+    font-size: 1rem;
 }
