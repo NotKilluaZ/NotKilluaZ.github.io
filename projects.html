@@ -1,29 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Personal Website - Charlie Parker</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Charlie Parker | Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 
-<body id='body1'>
-  <div class='navBarLight'>
-    <h1>Charlie Parker</h1>
-    <a class='navEffectLight' href="contact.html">Contact</a>
-    <a class='navEffectLight' href="hobbies.html">Hobbies</a>
-    <a class='navEffectLight' href="aspirations.html">Aspirations</a>
-    <a class='navEffectLight' href="projects.html">Projects</a>
-    <a class='navEffectLight' href="index.html">Home</a>
-  </div>
-  <h1 class='title'>Projects</h1>
-  <table class='projectsTable'>
-    <tr><td class='projectsTableData'><a class='projectButton' id='worldCupSim' href="https://github.com/NotKilluaZ/worldcupsimulator.github.io" target="_blank">World Cup Simulator</a></td><td class='projectsTableData'><a class='projectButton' id='dragonGame' href="projects/dragongame3/index.html" target="_blank">Dragon Game 3</a></td></tr>
-    <tr><td class='projectsTableData'><a class='projectButton' id='red7' href="https://github.com/NotKilluaZ/red7cardgame.github.io.git" target="_blank">Red 7 Card Game</a></td><td id='empty'>Empty</td></tr>
-  </table>
-  
-  <script src="script.js"></script>
+<body id="body1">
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navBar">
+            <h1 class="logo">Charlie Parker</h1>
+            <ul class="navLinks">
+                <li><a href="index.html" class="navEffect">Home</a></li>
+                <li><a href="projects.html" class="navEffect">Projects</a></li>
+                <li><a href="hobbies.html" class="navEffect">Hobbies</a></li>
+                <li><a href="aspirations.html" class="navEffect">Aspirations</a></li>
+                <li><a href="contact.html" class="navEffect">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="sectionTitle">Projects</h2>
+        <div class="projectsGrid">
+            <div class="projectCard">
+                <a href="https://github.com/NotKilluaZ/worldcupsimulator.github.io" target="_blank">
+                    <img src="https://images.indianexpress.com/2022/12/FIFA-World-Cup-2022-finals.jpg" alt="World Cup Simulator" class="projectImage">
+                    <div class="projectInfo">
+                        <h3>World Cup Simulator</h3>
+                        <p>Experience the thrill of the World Cup with this interactive simulation.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="projectCard">
+                <a href="projects/dragongame3/index.html" target="_blank">
+                    <img src="https://preview.redd.it/cceb82p5arz61.jpg" alt="Dragon Game" class="projectImage">
+                    <div class="projectInfo">
+                        <h3>Dragon Game 3</h3>
+                        <p>Embark on an epic adventure in this fun and challenging game.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="projectCard">
+                <a href="https://github.com/NotKilluaZ/red7cardgame.github.io.git" target="_blank">
+                    <img src="https://meeplelikeus.b-cdn.net/wp-content/uploads/2017/09/20170905_113531.jpg" alt="Red 7 Card Game" class="projectImage">
+                    <div class="projectInfo">
+                        <h3>Red 7 Card Game</h3>
+                        <p>A unique card game that will keep you on your toes!</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Made with ❤️ by Charlie Parker</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
