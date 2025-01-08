@@ -1,55 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Charlie Parker | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
-<body>
 
-  <!-- Main Header -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#body4">Contact</a></li>
-        <li><a href="#body1">Projects</a></li>
-      </ul>
-    </nav>
-  </header>
+<body id="body1">
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navBar">
+            <h1 class="logo">Charlie Parker</h1>
+            <ul class="navLinks">
+                <li><a href="index.html" class="navEffect">Home</a></li>
+                <li><a href="projects.html" class="navEffect">Projects</a></li>
+                <li><a href="hobbies.html" class="navEffect">Hobbies</a></li>
+                <li><a href="aspirations.html" class="navEffect">Aspirations</a></li>
+                <li><a href="contact.html" class="navEffect">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Contact Page Section -->
-  <div id="body4">
-    <div class="contactContainer">
-      <h2>Contact Me</h2>
-      <form class="contactForm">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </div>
+    <!-- Main Content Section -->
+    <section class="intro">
+        <h2>Welcome to My Portfolio!</h2>
+        <p>I am Charlie Parker, a passionate developer who loves creating innovative and interactive experiences.</p>
+        <div class="cta">
+            <a href="projects.html" class="btn">View My Projects</a>
+        </div>
+    </section>
 
-  <!-- Projects Page Section -->
-  <div id="body1">
-    <h1 class="title">Projects</h1>
-    <div class="projectsTable">
-      <div class="projectsTableData">
-        <a href="https://github.com/NotKilluaZ/worldcupsimulator.github.io" target="_blank">World Cup Simulator</a>
-      </div>
-      <div class="projectsTableData">
-        <a href="projects/dragongame3/index.html" target="_blank">Dragon Game 3</a>
-      </div>
-      <div class="projectsTableData">
-        <a href="https://github.com/NotKilluaZ/red7cardgame.github.io.git" target="_blank">Red 7 Card Game</a>
-      </div>
-      <div class="projectsTableData" id="empty">
-        <p>Coming Soon...</p>
-      </div>
-    </div>
-  </div>
+    <!-- Footer -->
+    <footer>
+        <p>Made with ❤️ by Charlie Parker</p>
+    </footer>
 
+    <script src="script.js"></script>
 </body>
+
 </html>
