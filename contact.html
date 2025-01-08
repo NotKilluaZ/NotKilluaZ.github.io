@@ -1,37 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Personal Website - Charlie Parker</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Charlie Parker | Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 
-<body id='body4'>
-  <div class='navBarLight'>
-    <h1>Charlie Parker</h1>
-    <a class='navEffectLight' href="contact.html">Contact</a>
-    <a class='navEffectLight' href="hobbies.html">Hobbies</a>
-    <a class='navEffectLight' href="aspirations.html">Aspirations</a>
-    <a class='navEffectLight' href="projects.html">Projects</a>
-    <a class='navEffectLight' href="index.html">Home</a>
-  </div>
-  <h1 class='title' id='contactInfoTitle'>Contact Information</h1>
-  <p id='hint'>(Hint: Hover over the purples areas!)</p>
-  <div class='emailContainer'>
-    <h5>Charlie Parker</h5>
-    <h6 class='email'>Student @ Robert Thirsk Highschool</h6>
-  </div>
-  <br><br><br>
-  <div class='emailContainer'>
-    <h4>Email</h4>
-    <h6 class='email'>charlie8parker@gmail.com</h6>
-  </div>
-  <br>
-  <img id='animePng'src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/78b0fe92-ec7c-4e65-9bf7-ef16fe0add11/d9wtddb-5b8c6669-efae-4144-9d00-dbd5b512751b.png/v1/fill/w_500,h_539,strp/render___anime_girl_by_petiteakemi_d9wtddb-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTM5IiwicGF0aCI6IlwvZlwvNzhiMGZlOTItZWM3Yy00ZTY1LTliZjctZWYxNmZlMGFkZDExXC9kOXd0ZGRiLTViOGM2NjY5LWVmYWUtNDE0NC05ZDAwLWRiZDViNTEyNzUxYi5wbmciLCJ3aWR0aCI6Ijw9NTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.HcA2am36-Y8HXb-6XZ9arZ_TKGiiNAcmNY4A93hgIz8" alt="uwu">
-  
-  <script src="script.js"></script>
+<body id="body1">
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navBar">
+            <h1 class="logo">Charlie Parker</h1>
+            <ul class="navLinks">
+                <li><a href="index.html" class="navEffect">Home</a></li>
+                <li><a href="projects.html" class="navEffect">Projects</a></li>
+                <li><a href="hobbies.html" class="navEffect">Hobbies</a></li>
+                <li><a href="aspirations.html" class="navEffect">Aspirations</a></li>
+                <li><a href="contact.html" class="navEffect">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Form Section -->
+    <section class="contact">
+        <h2 class="sectionTitle">Contact Me</h2>
+        <form class="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Made with ❤️ by Charlie Parker</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
