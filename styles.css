@@ -23,6 +23,10 @@ h2 {
   font-weight: bold;
 }
 
+.skill-label {
+  padding-top: 5px;
+}
+
 .project-info-text {
   padding-top: 4px;
   padding-bottom: 8px;
