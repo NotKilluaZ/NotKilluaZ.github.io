@@ -1,0 +1,133 @@
+:root {
+  --bg: #0a0a0a;
+  --dark: #1f1f1f;
+  --light: #eeeeee;
+  --accent: #2ecc71;
+  --accent-dark: #27ae60;
+  --transition: 0.4s ease;
+}
+
+h2 {
+  padding: 15px;
+}
+
+.about-me {
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 45px;
+  padding: 15px;
+}
+
+.sub-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.project-info-text {
+  padding-top: 4px;
+  padding-bottom: 8px;
+}
+
+.modal-text {
+  padding-top: 10px;
+  padding-bottom: 35px;
+}
+
+body { padding-top: 80px; background: var(--bg); color: var(--light); scroll-behavior: smooth; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Montserrat', sans-serif; }
+header { position: fixed; width: 100%; background: var(--dark); z-index: 100; top:0; }
+.navbar { max-width: 2000px; margin: auto; display: flex; align-items: center; justify-content: space-between; padding: 1rem;}
+.logo { font-size: 1.5rem; color: var(--accent); cursor: pointer; }
+.nav-links { list-style: none; display: flex; }
+.nav-links li { margin-left: 1.5rem; }
+.nav-links a { color: var(--light); text-decoration: none; position: relative; transition: color var(--transition); }
+.nav-links a::after { content: ''; position: absolute; bottom: -3px; left: 0; width: 0; height: 2px; background: var(--accent); transition: width var(--transition); }
+.nav-links a:hover { color: var(--accent); }
+.nav-links a:hover::after { width: 100%; }
+.burger { display: none; flex-direction: column; cursor: pointer; }
+.burger span { width: 25px; height: 3px; background: var(--light); margin: 4px; transition: transform var(--transition); }
+
+.hero { position: relative; height: 100vh; overflow: hidden; }
+.hero parallax { background-attachment: fixed; }
+.hero-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.6); z-index: 1; }
+#particles { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; }
+.hero-content { position: relative; top: 50%; transform: translateY(-50%); text-align: center; z-index: 2; }
+.hero-content h1 { font-size: 3rem; margin-bottom: 1rem; color: var(--accent); }
+.hero-content p { margin-bottom: 1.5rem; }
+.btn { background: var(--accent); color: #fff; padding: 0.75rem 1.5rem; border: none; border-radius: 30px; cursor: pointer; transition: transform var(--transition), background var(--transition); text-decoration: none; }
+.btn:hover { background: var(--accent-dark); transform: translateY(-3px); text-decoration: none; }
+
+.section { padding: 6rem 2rem; }
+.container { max-width: 1200px; margin: auto; }
+.reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.visible { opacity: 1; transform: translateY(0); }
+
+.about-flex { display: flex; align-items: center; gap: 2rem; }
+.about-flex img { width: 300px; border-radius: 8px; transition: transform var(--transition); }
+.about-flex img:hover { transform: scale(1.05); }
+
+.skill-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 2rem; }
+.skill { background: var(--dark); padding: 2rem; border-radius: 8px; text-align: center; }
+.skill i { font-size: 2.5rem; color: v  ar(--accent); margin-bottom: 1rem; }
+.skill-bar { width: 100%; height: 6px; background: rgba(255,255,255,0.2); border-radius: 3px; margin-top: 1rem; overflow: hidden; }
+.skill-bar span { display: block; width: 0; height: 100%; background: var(--accent); transition: width 1s ease-out; }
+
+.projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 2rem; }
+.project-card { position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.5); cursor:pointer; }
+.project-card img { width: 100%; transition: transform var(--transition); }
+.project-card:hover img { transform: scale(1.05); }
+.project-info { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); padding: 1rem; transform: translateY(100%); transition: transform var(--transition); }
+.project-card:hover .project-info { transform: translateY(0); }
+
+.modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.8); align-items: center; justify-content: center; }
+.modal-content { background: var(--dark); padding: 2rem; border-radius: 8px; max-width: 600px; text-align: center; position: relative; }
+.close-btn { position: absolute; top: 1rem; right: 1rem; cursor: pointer; font-size: 1.5rem; color: var(--light); }
+
+#contact-form { display: flex; flex-direction: column; gap: 1rem; }
+#contact-form input, #contact-form textarea { padding: 0.75rem; border: none; border-radius: 4px; background: var(--dark); color: var(--light); }
+
+.back-to-top {  position: fixed; bottom: 1.5rem; left: 50%; transform: translateX(-50%); display: none; z-index: 1000; }
+#back-to-top { background: var(--accent); color: #fff; padding: 0.75rem; border: none; cursor: pointer; transition: transform var(--transition); }
+#back-to-top:hover { transform: translate(-50%, -3px); }
+
+footer { text-align: center; padding: 2rem; background: var(--dark); }
+footer p { color: var(--light); }
+
+/* Contact and EmailJS */
+#contact-form { display: flex; flex-direction: column; gap: 1rem; }
+#contact-form input,#contact-form textarea { padding: 0.75rem; border:none; border-radius:4px; background:var(--dark); color:var(--light); }
+
+/* Ripple Effect */
+.ripple {
+  position: relative;      /* container for the pseudo‑element */
+  overflow: hidden;        /* clip the ripple circle */
+}
+
+.ripple:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  pointer-events: none;    /* allow clicks through it */
+}
+
+.ripple:active:after {
+  transform: translate(-50%, -50%) scale(4);
+  opacity: 1;
+  transition: none;        /* jump immediately to the “expanded” state */
+}
+
+/* Responsive */
+@media(max-width:768px) {
+  .about-flex { flex-direction: column; }
+  .burger { display: flex; }
+  .nav-links { display: none; position: absolute; top: 100%; right: 0; background: var(--dark); flex-direction: column; width: 200px; }
+  .nav-links.nav-active { display: flex; }
+}
