@@ -54,12 +54,19 @@ h2 {
   color: var(--accent);
 }
 
+.logo img {
+  max-height: 50px;
+  width: auto;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
 
 body { padding-top: 80px; background: var(--bg); color: var(--light); scroll-behavior: smooth; }
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Montserrat', sans-serif; }
 header { position: fixed; width: 100%; background: var(--dark); z-index: 100; top:0; }
 .navbar { max-width: 2000px; margin: auto; display: flex; align-items: center; justify-content: space-between; padding: 1rem;}
-.logo { font-size: 1.5rem; color: var(--accent); cursor: pointer; }
+.logo { cursor: pointer;}
 .nav-links { list-style: none; display: flex; }
 .nav-links li { margin-left: 1.5rem; }
 .nav-links a { color: var(--light); text-decoration: none; position: relative; transition: color var(--transition); }
